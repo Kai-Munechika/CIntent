@@ -1,7 +1,5 @@
 package com.kaim808.criminalintent;
 
-import android.util.Log;
-
 import java.util.Date;
 import java.util.UUID;
 
@@ -11,14 +9,13 @@ import java.util.UUID;
 
 public class Crime {
 
-    private UUID mId;;
+    private UUID mId;
     private String mTitle;
     private Date mDate;
     private boolean mSolved;
 
     public Crime() {
         mId = UUID.randomUUID();    // we generate a random universally unique ID value
-        Log.e("kaikai", "In Crime constructor: " + mId.toString());
         mDate = new Date(); // default constructor for Date() sets mDate to the current Date
     }
 
